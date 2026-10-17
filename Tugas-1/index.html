@@ -66,42 +66,42 @@
       <tr>
       <td>
 
+        <input type="hidden" name="id_tugas" value="tugas-1">
+
+        <!-- NAMA -->
+        <table border="0" cellpadding="4">
+          <tr>
+            <td><label for="nama"><b>Nama</b></label></td>
+            <td><input type="text" id="nama" name="nama" size="30" maxlength="50"></td>
+          </tr>
+        </table>
+
+        <br>
+
+        <!-- MATERI -->
         <fieldset>
-          <legend><b>Data Diri</b></legend>
+          <legend><b>Materi</b></legend>
           <table border="0" cellpadding="4">
             <tr>
-              <td><label for="nama">Nama Lengkap</label></td>
-              <td><input type="text" id="nama" name="nama" size="30" maxlength="50"></td>
-            </tr>
-            <tr>
-              <td><label for="npm">NPM</label></td>
-              <td><input type="text" id="npm" name="npm" size="12" maxlength="10"></td>
-            </tr>
-            <tr>
-              <td><label for="pass">Password</label></td>
-              <td><input type="password" id="pass" name="password" size="30"></td>
-            </tr>
-            <tr>
-              <td valign="top">Jenis Kelamin</td>
+              <td valign="top">Workshop<br><font size="1">(boleh lebih dari satu)</font></td>
               <td>
-                <input type="radio" id="pria" name="gender" value="pria" checked>
-                <label for="pria">Laki-laki</label>
-                
-                <input type="radio" id="wanita" name="gender" value="wanita">
-                <label for="wanita">Perempuan</label>
+                <input type="checkbox" id="w1" name="workshop" value="xml">
+                <label for="w1">Introduction to XML</label><br>
+                <input type="checkbox" id="w2" name="workshop" value="vb-database">
+                <label for="w2">Visual Basic With Database</label><br>
+                <input type="checkbox" id="w3" name="workshop" value="oracle-report">
+                <label for="w3">Oracle Developer Report</label>
               </td>
             </tr>
             <tr>
-              <td valign="top">Hobi</td>
+              <td valign="top">Kursus</td>
               <td>
-                <input type="checkbox" id="h1" name="hobi" value="coding">
-                <label for="h1">Coding</label>
-                <input type="checkbox" id="h2" name="hobi" value="musik">
-              
-                <label for="h2">Musik</label>
-                <input type="checkbox" id="h3" name="hobi" value="olahraga">
-              
-                <label for="h3">Olahraga</label>
+                <input type="radio" id="k1" name="kursus" value="asp" checked>
+                <label for="k1">Web Programming With ASP</label><br>
+                <input type="radio" id="k2" name="kursus" value="vb-sql">
+                <label for="k2">Visual Basic With SQL Server</label><br>
+                <input type="radio" id="k3" name="kursus" value="oracle-sql">
+                <label for="k3">Introduction to Oracle: SQL and PL/SQL</label>
               </td>
             </tr>
           </table>
@@ -109,43 +109,17 @@
 
         <br>
 
+        <!-- IPK -->
         <fieldset>
-          <legend><b>Data Akademik</b></legend>
+          <legend><b>IPK</b></legend>
           <table border="0" cellpadding="4">
             <tr>
-              <td><label for="jurusan">Jurusan</label></td>
-              <td>
-                <select id="jurusan" name="jurusan">
-                  <option value="">-- Pilih Jurusan --</option>
-                  <optgroup label="Fakultas Ilmu Komputer">
-                    <option value="si" selected>Sistem Informasi</option>
-                    <option value="ti">Teknik Informatika</option>
-                  </optgroup>
-                  <optgroup label="Fakultas Teknologi Industri">
-                    <option value="te">Teknik Elektro</option>
-                    <option value="tm">Teknik Mesin</option>
-                  </optgroup>
-                </select>
-              </td>
+              <td><label for="lokal">Lokal</label></td>
+              <td><input type="text" id="lokal" name="ipk_lokal" size="6" maxlength="4"></td>
             </tr>
             <tr>
-              <td valign="top"><label for="matkul">Mata Kuliah Favorit<br><font size="1">(tahan Ctrl untuk pilih banyak)</font></label></td>
-              <td>
-                <select id="matkul" name="matkul" size="4" multiple>
-                  <option value="pbw">Pemrograman Web</option>
-                  <option value="basdat">Basis Data</option>
-                  <option value="pbo">Pemrograman Berorientasi Objek</option>
-                  <option value="rpl">Rekayasa Perangkat Lunak</option>
-                </select>
-              </td>
-            </tr>
-            <tr>
-              <td valign="top"><label for="alamat">Alamat</label></td>
-              <td><textarea id="alamat" name="alamat" rows="4" cols="35"></textarea></td>
-            </tr>
-            <tr>
-              <td><label for="foto">Upload Foto</label></td>
-              <td><input type="file" id="foto" name="foto"></td>
+              <td><label for="utama">Utama</label></td>
+              <td><input type="text" id="utama" name="ipk_utama" size="6" maxlength="4"></td>
             </tr>
           </table>
         </fieldset>
@@ -155,15 +129,12 @@
         <p align="center">
           <input type="submit" value="Kirim">
           <input type="reset" value="Reset">
-          <input type="button" value="Tombol Biasa">
-          <button type="submit" name="simpan">Simpan</button>
-          <input type="image" src="../assets/send-icon.jpg" alt="Kirim dengan gambar" width="40" height="40">
         </p>
 
     </td>
     </tr>
     </table>
   </form>
-
+  
 </body>
 </html>
