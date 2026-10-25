@@ -1,0 +1,38 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TUGAS Ke 2 - With CSS</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>TUGAS KE 2</h1>
+<img src="../assets/notes.png" alt="Gambar Contoh">
+
+<table class="data">
+<thead>
+<tr><th rowspan="2">NAMA</th><th colspan="2">MATERI</th><th colspan="2">IPK</th></tr>
+<tr><th>WORKSHOP</th><th>KURSUS</th><th>LOKAL</th><th>UTAMA</th></tr>
+</thead>
+<tbody>
+<tr><td>Adi</td><td>Introduction to XML</td><td>Web Programming With ASP</td><td>3,23</td><td>3,47</td></tr>
+<tr><td rowspan="2">Ani</td><td>Visual basic With Database</td><td rowspan="2">Visual Basic With SQL Server</td><td rowspan="2">3,53</td><td rowspan="2">3,64</td></tr>
+<tr><td>Oracle Developer Report</td></tr>
+<tr><td>Ali</td><td>Visual basic With ...</td><td>Introduction to Oracle: SQL and PL/SQL</td><td>3,66</td><td>3,39</td></tr>
+</tbody>
+</table>
+
+<h3>Form Input Data</h3>
+<form action="#" method="post">
+<table class="form">
+<tr><td>Text Input (Nama):</td><td><input type="text" name="nama"></td></tr>
+<tr><td>Password:</td><td><input type="password" name="password"></td></tr>
+<tr><td>Jenis Kelamin (Radio):</td><td><input type="radio" name="jk" value="L"> Laki-laki <input type="radio" name="jk" value="P"> Perempuan</td></tr>
+<tr><td>Hobi (Checkbox):</td><td><input type="checkbox" name="hobi" value="Coding"> Coding <input type="checkbox" name="hobi" value="Reading"> Membaca</td></tr>
+<tr><td>Jurusan (Select Option):</td><td><select name="jurusan"><option value="Sistem Informasi">Sistem Informasi</option><option value="Teknik Informatika">Teknik Informatika</option></select></td></tr>
+<tr><td>Upload File:</td><td><input type="file" name="berkas"></td></tr>
+<tr><td>Alamat (Textarea):</td><td><textarea name="alamat" rows="3" cols="25"></textarea></td></tr>
+<tr><td colspan="2"><input type="hidden" name="user_id" value="12345"><input type="submit" value="Kirim"> <input type="reset" value="Reset"> <input type="button" value="Tombol Biasa"></td></tr>
+</table>
+</form>
+</body>
+</html>
