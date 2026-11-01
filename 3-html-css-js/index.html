@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TUGAS Ke 3 - With html, css, js</title>
+<link rel="stylesheet" type="text/css" href="../3-html-css-js/style.css">
+</head>
+<body>
+<h1>TUGAS KE 2</h1>
+<img src="../assets/notes.png" alt="Gambar Contoh">
+
+<table class="data" id="tabelUtama">
+<thead>
+<tr><th rowspan="2">NAMA</th><th colspan="2">MATERI</th><th colspan="2">IPK</th></tr>
+<tr><th>WORKSHOP</th><th>KURSUS</th><th>LOKAL</th><th>UTAMA</th></tr>
+</thead>
+<tbody>
+<tr><td>Adi</td><td>Introduction to XML</td><td>Web Programming With ASP</td><td>3,23</td><td>3,47</td></tr>
+<tr><td rowspan="2">Ani</td><td>Visual basic With Database</td><td rowspan="2">Visual Basic With SQL Server</td><td rowspan="2">3,53</td><td rowspan="2">3,64</td></tr>
+<tr><td>Oracle Developer Report</td></tr>
+<tr><td>Ali</td><td>Visual basic With ...</td><td>Introduction to Oracle: SQL and PL/SQL</td><td>3,66</td><td>3,39</td></tr>
+</tbody>
+</table>
+
+<h3>Form Input Data</h3>
+<form action="#" method="post" name="formData" onsubmit="return tambahData()">
+<table class="form">
+<tr><td>Nama:</td><td><input type="text" name="nama" required></td></tr>
+<tr>
+  <td>Workshop:</td>
+  <td>
+    <select name="workshop" required>
+      <option value="">-- Pilih Workshop --</option>
+      <option value="Introduction to XML">Introduction to XML</option>
+      <option value="Visual basic With Database">Visual basic With Database</option>
+      <option value="Oracle Developer Report">Oracle Developer Report</option>
+      <option value="Visual basic With ...">Visual basic With ...</option>
+    </select>
+  </td>
+</tr>
+<tr>
+  <td>Kursus:</td>
+  <td>
+    <select name="kursus" required>
+      <option value="">-- Pilih Kursus --</option>
+      <option value="Web Programming With ASP">Web Programming With ASP</option>
+      <option value="Visual Basic With SQL Server">Visual Basic With SQL Server</option>
+      <option value="Introduction to Oracle: SQL and PL/SQL">Introduction to Oracle: SQL and PL/SQL</option>
+    </select>
+  </td>
+</tr>
+<tr><td>IPK Lokal:</td><td><input type="text" name="ipkLokal" required></td></tr>
+<tr><td>IPK Utama:</td><td><input type="text" name="ipkUtama" required></td></tr>
+<tr><td colspan="2"><input type="submit" value="Kirim"> <input type="reset" value="Reset"></td></tr>
+</table>
+</form>
+
+<script src="script.js"></script>
+</body>
+</html>
